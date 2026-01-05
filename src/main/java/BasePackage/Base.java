@@ -32,7 +32,7 @@ public class Base {
 		
 		if(browserName.equals("chrome")) {
 			//code to launch chrome
-			System.setProperty("webdriver.chrome.driver", "C://Users//sfaza//eclipse-workspace//chromedriver-win64//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C://Users//ujjwa//Project2026//chromedriver-win64//chromedriver.exe");
 			 driver = new ChromeDriver(options);
 			 
 		}
