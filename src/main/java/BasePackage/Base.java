@@ -25,7 +25,7 @@ public class Base {
 		//to disable save password pop up
 
 		prop=new Properties();  
-		FileInputStream fis=new FileInputStream("C:\\Users\\sfaza\\eclipse-workspace\\AutomationE2E\\src\\main\\java\\Resources\\Data.properties");
+		FileInputStream fis=new FileInputStream("C:\\Users\\ujjwa\\Project2026\\src\\main\\java\\Resources\\Data.properties");
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
 		String urlName=prop.getProperty("url");
