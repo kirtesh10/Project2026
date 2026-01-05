@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-04T18:55:45 IST" name="AutomationE2E Suite" finished-at="2026-01-04T18:56:36 IST" duration-ms="50476">
+    <groups>
+    </groups>
+    <test started-at="2026-01-04T18:55:45 IST" name="Login Tests" finished-at="2026-01-04T18:55:56 IST" duration-ms="10580">
+      <class name="Login">
+        <test-method is-config="true" signature="setupLogger()[pri:0, instance:Login@158a3b2e]" started-at="2026-01-04T18:55:45 IST" name="setupLogger" finished-at="2026-01-04T18:55:45 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupLogger -->
+        <test-method signature="basePageNavigation()[pri:0, instance:Login@158a3b2e]" started-at="2026-01-04T18:55:45 IST" name="basePageNavigation" finished-at="2026-01-04T18:55:56 IST" duration-ms="10401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Login@158a3b2e]" started-at="2026-01-04T18:55:56 IST" name="teardown" finished-at="2026-01-04T18:55:56 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Login -->
+    </test> <!-- Login Tests -->
+    <test started-at="2026-01-04T18:55:56 IST" name="HomePge Tests" finished-at="2026-01-04T18:55:58 IST" duration-ms="2094">
+      <class name="HomePage">
+        <test-method signature="basePageNavigation()[pri:0, instance:HomePage@7e7b159b]" started-at="2026-01-04T18:55:56 IST" name="basePageNavigation" finished-at="2026-01-04T18:55:58 IST" duration-ms="1971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:HomePage@7e7b159b]" started-at="2026-01-04T18:55:58 IST" name="teardown" finished-at="2026-01-04T18:55:58 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- HomePage -->
+    </test> <!-- HomePge Tests -->
+    <test started-at="2026-01-04T18:55:58 IST" name="CheckOutPage Tests" finished-at="2026-01-04T18:56:04 IST" duration-ms="5600">
+      <class name="CheckOutPageCalculation">
+        <test-method signature="AddtoCartCheck()[pri:1, instance:CheckOutPageCalculation@40dff0b7]" started-at="2026-01-04T18:55:58 IST" name="AddtoCartCheck" finished-at="2026-01-04T18:56:03 IST" duration-ms="5075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddtoCartCheck -->
+        <test-method signature="YourCart()[pri:2, instance:CheckOutPageCalculation@40dff0b7]" started-at="2026-01-04T18:56:03 IST" name="YourCart" finished-at="2026-01-04T18:56:03 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- YourCart -->
+        <test-method signature="CheckoutCalculation()[pri:3, instance:CheckOutPageCalculation@40dff0b7]" started-at="2026-01-04T18:56:03 IST" name="CheckoutCalculation" finished-at="2026-01-04T18:56:03 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckoutCalculation -->
+        <test-method signature="PriceVerification()[pri:4, instance:CheckOutPageCalculation@40dff0b7]" started-at="2026-01-04T18:56:03 IST" name="PriceVerification" finished-at="2026-01-04T18:56:03 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PriceVerification -->
+        <test-method signature="TaxVerificatione()[pri:5, instance:CheckOutPageCalculation@40dff0b7]" started-at="2026-01-04T18:56:03 IST" name="TaxVerificatione" finished-at="2026-01-04T18:56:03 IST" duration-ms="24" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Tax amount mismatch expected [3.68] but found [3.6784]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Tax amount mismatch expected [3.68] but found [3.6784]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEquals(Assert.java:701)
+at CheckOutPageCalculation.TaxVerificatione(CheckOutPageCalculation.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TaxVerificatione -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:CheckOutPageCalculation@40dff0b7]" started-at="2026-01-04T18:56:03 IST" name="teardown" finished-at="2026-01-04T18:56:04 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- CheckOutPageCalculation -->
+    </test> <!-- CheckOutPage Tests -->
+    <test started-at="2026-01-04T18:56:04 IST" name="CheckTitleHomePage Tests" finished-at="2026-01-04T18:56:15 IST" duration-ms="11168">
+      <class name="CheckTitleHomePage">
+        <test-method signature="VerifyHomePageTitle()[pri:0, instance:CheckTitleHomePage@2c7b5824]" started-at="2026-01-04T18:56:04 IST" name="VerifyHomePageTitle" finished-at="2026-01-04T18:56:15 IST" duration-ms="11088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePageTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:CheckTitleHomePage@2c7b5824]" started-at="2026-01-04T18:56:15 IST" name="teardown" finished-at="2026-01-04T18:56:15 IST" duration-ms="77" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b65dacf4691189989a845febe93e15f0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sfaza\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61954}, goog:processID: 23160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61954/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b65dacf4691189989a845febe93e15f0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b65dacf4691189989a845febe93e15f0, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sfaza\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61954}, goog:processID: 23160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61954/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b65dacf4691189989a845febe93e15f0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:414)
+at CheckTitleHomePage.teardown(CheckTitleHomePage.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.afterRun(TestRunner.java:877)
+at org.testng.TestRunner.run(TestRunner.java:599)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- CheckTitleHomePage -->
+    </test> <!-- CheckTitleHomePage Tests -->
+    <test started-at="2026-01-04T18:56:15 IST" name="AddToCart Tests" finished-at="2026-01-04T18:56:31 IST" duration-ms="15802">
+      <class name="AddToCart">
+        <test-method signature="AddtoCartCheck()[pri:0, instance:AddToCart@681a8b4e]" started-at="2026-01-04T18:56:15 IST" name="AddtoCartCheck" finished-at="2026-01-04T18:56:30 IST" duration-ms="15568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddtoCartCheck -->
+        <test-method signature="YourCart()[pri:0, instance:AddToCart@681a8b4e]" started-at="2026-01-04T18:56:30 IST" name="YourCart" finished-at="2026-01-04T18:56:30 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- YourCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:AddToCart@681a8b4e]" started-at="2026-01-04T18:56:30 IST" name="teardown" finished-at="2026-01-04T18:56:31 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- AddToCart -->
+    </test> <!-- AddToCart Tests -->
+    <test started-at="2026-01-04T18:56:31 IST" name="CheckOutPageCalculation Tests" finished-at="2026-01-04T18:56:36 IST" duration-ms="5184">
+      <class name="CheckOutPageCalculation">
+        <test-method signature="AddtoCartCheck()[pri:1, instance:CheckOutPageCalculation@708400f6]" started-at="2026-01-04T18:56:31 IST" name="AddtoCartCheck" finished-at="2026-01-04T18:56:35 IST" duration-ms="4623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddtoCartCheck -->
+        <test-method signature="YourCart()[pri:2, instance:CheckOutPageCalculation@708400f6]" started-at="2026-01-04T18:56:35 IST" name="YourCart" finished-at="2026-01-04T18:56:35 IST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- YourCart -->
+        <test-method signature="CheckoutCalculation()[pri:3, instance:CheckOutPageCalculation@708400f6]" started-at="2026-01-04T18:56:35 IST" name="CheckoutCalculation" finished-at="2026-01-04T18:56:36 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckoutCalculation -->
+        <test-method signature="PriceVerification()[pri:4, instance:CheckOutPageCalculation@708400f6]" started-at="2026-01-04T18:56:36 IST" name="PriceVerification" finished-at="2026-01-04T18:56:36 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PriceVerification -->
+        <test-method signature="TaxVerificatione()[pri:5, instance:CheckOutPageCalculation@708400f6]" started-at="2026-01-04T18:56:36 IST" name="TaxVerificatione" finished-at="2026-01-04T18:56:36 IST" duration-ms="27" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Tax amount mismatch expected [3.68] but found [3.6784]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Tax amount mismatch expected [3.68] but found [3.6784]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEquals(Assert.java:701)
+at CheckOutPageCalculation.TaxVerificatione(CheckOutPageCalculation.java:109)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TaxVerificatione -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:CheckOutPageCalculation@708400f6]" started-at="2026-01-04T18:56:36 IST" name="teardown" finished-at="2026-01-04T18:56:36 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- CheckOutPageCalculation -->
+    </test> <!-- CheckOutPageCalculation Tests -->
+  </suite> <!-- AutomationE2E Suite -->
+</testng-results>

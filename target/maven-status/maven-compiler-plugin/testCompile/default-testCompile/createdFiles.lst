@@ -1,0 +1,10 @@
+Login.class
+CheckOutPageCalculation.class
+PageObject\CheckOutPage.class
+PageObject\LoginPage.class
+CheckTitleHomePage.class
+PageObject\programmtest.class
+AddToCart.class
+PageObject\HomePageTitle.class
+HomePage.class
+PageObject\AddtoCartPage.class

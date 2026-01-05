@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationE2E Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CheckOutPage Tests(failed)">
+    <classes>
+      <class name="CheckOutPageCalculation">
+        <methods>
+          <include name="TaxVerificatione"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- CheckOutPageCalculation -->
+    </classes>
+  </test> <!-- CheckOutPage Tests(failed) -->
+  <test thread-count="5" name="CheckOutPageCalculation Tests(failed)">
+    <classes>
+      <class name="CheckOutPageCalculation">
+        <methods>
+          <include name="TaxVerificatione"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- CheckOutPageCalculation -->
+    </classes>
+  </test> <!-- CheckOutPageCalculation Tests(failed) -->
+</suite> <!-- Failed suite [AutomationE2E Suite] -->
