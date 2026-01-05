@@ -45,6 +45,7 @@ public class Login extends Base {
 		lp.clicklogin();
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
+		Thread.sleep(2000);
 		log.info("Login Successful");
 		log.info("=========Test Case: Login Page Navigation Completed=========");
 	}
@@ -53,7 +54,7 @@ public class Login extends Base {
 	public void teardown() {
 		log.info("Closing the browser");
 		driver.close();
-		log.info("Browser closed");
+		 
 	}
 
 }
