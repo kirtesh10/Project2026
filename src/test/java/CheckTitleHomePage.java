@@ -42,7 +42,7 @@ public class CheckTitleHomePage extends Base {
 		System.out.println("Title Verified Successfully i have 'Swag Labs' and i get=" + hpt.getHomeTitle());
 		AssertJUnit.assertEquals(hpt.getProductsTitle(), "Products");
 		System.out.println("Title Not Verified Successfully i have 'Products' and i get=" + hpt.getProductsTitle());
-		driver.close();
+
 		log.info("=========Test Case: Home Page Title Verification Completed=========");
 
 	}
