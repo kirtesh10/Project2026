@@ -25,15 +25,17 @@ public class Base {
 		//to disable save password pop up
 
 		prop=new Properties();  
-		FileInputStream fis=new FileInputStream("C:\\Users\\sfaza\\eclipse-workspace\\AutomationE2E\\src\\main\\java\\Resources\\Data.properties");
+		//FileInputStream fis=new FileInputStream("/src/main/java/Resources/Data.properties");
+		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Resources\\Data.properties");
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
 		String urlName=prop.getProperty("url");
 		
 		if(browserName.equals("chrome")) {
 			//code to launch chrome
-			System.setProperty("webdriver.chrome.driver", "C://Users//sfaza//eclipse-workspace//AutomationE2E//chromedriver-win64//chromedriver.exe");
-			 driver = new ChromeDriver(options);
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver-win64//chromedriver.exe");
+		
+			driver = new ChromeDriver(options); 
 			 
 		}
 		else if(browserName.equals("firefox")) {

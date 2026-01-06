@@ -63,7 +63,7 @@ public class AddToCart extends Base {
 	@AfterTest
 	public void teardown() {
 		log.info("Closing the browser");
-		driver.close();
+	//	driver.close();
 		log.info("Browser closed");
 	}
 
