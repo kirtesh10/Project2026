@@ -32,7 +32,7 @@ public class Login extends Base {
 	@Test
 	public void basePageNavigation() throws IOException, InterruptedException, AWTException {
 		log.info("=========Test Case: Login Page Navigation Started=========");
-
+		System.out.println("i am come from local branch");
 		driver = initializerDriver();
 		driver.get(prop.getProperty("url"));
 		LoginPage lp = new LoginPage(driver);
@@ -54,7 +54,7 @@ public class Login extends Base {
 	public void teardown() {
 		log.info("Closing the browser");
 		driver.close();
-		 
+
 	}
 
 }
