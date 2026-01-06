@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 51.14 s <<< FAILURE! -- in TestSuite
+Tests run: 16, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 52.47 s <<< FAILURE! -- in TestSuite
 CheckOutPageCalculation.TaxVerificatione -- Time elapsed: 0.028 s <<< FAILURE!
 java.lang.AssertionError: Tax amount mismatch expected [3.68] but found [3.6784]
 	at org.testng.Assert.fail(Assert.java:99)
@@ -39,15 +39,15 @@ java.lang.AssertionError: Tax amount mismatch expected [3.68] but found [3.6784]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-CheckTitleHomePage.teardown -- Time elapsed: 11.17 s <<< FAILURE!
+CheckTitleHomePage.teardown -- Time elapsed: 10.18 s <<< FAILURE!
 org.openqa.selenium.NoSuchSessionException: 
 invalid session id
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b65dacf4691189989a845febe93e15f0, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.148, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sfaza\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61954}, goog:processID: 23160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61954/devtoo..., se:cdpVersion: 143.0.7499.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b65dacf4691189989a845febe93e15f0
+Command: [ab185172b7c11c4202e21344356f189a, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\sfaza\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64685}, goog:processID: 76004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64685/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab185172b7c11c4202e21344356f189a
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -89,7 +89,7 @@ Session ID: b65dacf4691189989a845febe93e15f0
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-CheckOutPageCalculation.TaxVerificatione -- Time elapsed: 0.028 s <<< FAILURE!
+CheckOutPageCalculation.TaxVerificatione -- Time elapsed: 0.022 s <<< FAILURE!
 java.lang.AssertionError: Tax amount mismatch expected [3.68] but found [3.6784]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)

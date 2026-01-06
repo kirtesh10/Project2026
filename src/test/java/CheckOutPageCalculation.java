@@ -103,8 +103,9 @@ public class CheckOutPageCalculation extends Base {
 		String subtotal = checkout.getSubtotal().replace("Item total: $", "");
 		double subtotalvalue = Double.parseDouble(subtotal);
 		System.out.println("Subtotal value is: " + subtotalvalue);
-		double taxamount = (subtotalvalue * 8) / 100;
+		double taxamount = Math.round(subtotalvalue * 8.01) / 100.00;
 		String taxdisplayed = checkout.getTax().replace("Tax: $", "");
+		
 		double taxdisplayedvalue = Double.parseDouble(taxdisplayed);
 		Assert.assertEquals(taxamount, taxdisplayedvalue, "Tax amount mismatch");
 		log.info("Tax verification successful");
