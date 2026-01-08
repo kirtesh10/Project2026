@@ -12,7 +12,7 @@ public class AddtoCartPage {
 	public AddtoCartPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-	}
+	} 
 
 	@FindBy(id = "add-to-cart-sauce-labs-backpack")
 	WebElement addToCartButtone;

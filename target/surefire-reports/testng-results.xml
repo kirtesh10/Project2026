@@ -1,121 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-06T19:00:13 IST" name="AutomationE2E Suite" finished-at="2026-01-06T19:01:55 IST" duration-ms="101838">
+  <suite started-at="2026-01-08T15:27:09 IST" name="AutomationE2E Suite" finished-at="2026-01-08T15:27:23 IST" duration-ms="14014">
     <groups>
     </groups>
-    <test started-at="2026-01-06T19:00:13 IST" name="Login Tests" finished-at="2026-01-06T19:00:27 IST" duration-ms="14042">
+    <test started-at="2026-01-08T15:27:09 IST" name="Login Tests" finished-at="2026-01-08T15:27:21 IST" duration-ms="12243">
       <class name="Login">
-        <test-method is-config="true" signature="setupLogger()[pri:0, instance:Login@1e7aa82b]" started-at="2026-01-06T19:00:13 IST" name="setupLogger" finished-at="2026-01-06T19:00:13 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="setupLogger()[pri:0, instance:Login@4189d70b]" started-at="2026-01-08T15:27:09 IST" name="setupLogger" finished-at="2026-01-08T15:27:09 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupLogger -->
-        <test-method signature="basePageNavigation()[pri:0, instance:Login@1e7aa82b]" started-at="2026-01-06T19:00:13 IST" name="basePageNavigation" finished-at="2026-01-06T19:00:27 IST" duration-ms="13697" status="PASS">
+        <test-method signature="basePageNavigation()[pri:0, instance:Login@4189d70b]" started-at="2026-01-08T15:27:09 IST" name="basePageNavigation" finished-at="2026-01-08T15:27:21 IST" duration-ms="12093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Login@1e7aa82b]" started-at="2026-01-06T19:00:27 IST" name="teardown" finished-at="2026-01-06T19:00:27 IST" duration-ms="297" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Login@4189d70b]" started-at="2026-01-08T15:27:21 IST" name="teardown" finished-at="2026-01-08T15:27:21 IST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Login -->
     </test> <!-- Login Tests -->
-    <test started-at="2026-01-06T19:00:27 IST" name="HomePge Tests" finished-at="2026-01-06T19:00:30 IST" duration-ms="2272">
+    <test started-at="2026-01-08T15:27:22 IST" name="HomePge Tests" finished-at="2026-01-08T15:27:23 IST" duration-ms="1743">
       <class name="HomePage">
-        <test-method signature="basePageNavigation()[pri:0, instance:HomePage@1cbf6e72]" started-at="2026-01-06T19:00:27 IST" name="basePageNavigation" finished-at="2026-01-06T19:00:29 IST" duration-ms="1963" status="PASS">
+        <test-method signature="basePageNavigation()[pri:0, instance:HomePage@58c34bb3]" started-at="2026-01-08T15:27:22 IST" name="basePageNavigation" finished-at="2026-01-08T15:27:23 IST" duration-ms="1632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:HomePage@1cbf6e72]" started-at="2026-01-06T19:00:29 IST" name="teardown" finished-at="2026-01-06T19:00:30 IST" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:HomePage@58c34bb3]" started-at="2026-01-08T15:27:23 IST" name="teardown" finished-at="2026-01-08T15:27:23 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- HomePage -->
     </test> <!-- HomePge Tests -->
-    <test started-at="2026-01-06T19:00:30 IST" name="CheckOutPage Tests" finished-at="2026-01-06T19:00:36 IST" duration-ms="6094">
-      <class name="CheckOutPageCalculation">
-        <test-method signature="AddtoCartCheck()[pri:1, instance:CheckOutPageCalculation@21baa903]" started-at="2026-01-06T19:00:30 IST" name="AddtoCartCheck" finished-at="2026-01-06T19:00:35 IST" duration-ms="5354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddtoCartCheck -->
-        <test-method signature="YourCart()[pri:2, instance:CheckOutPageCalculation@21baa903]" started-at="2026-01-06T19:00:35 IST" name="YourCart" finished-at="2026-01-06T19:00:35 IST" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- YourCart -->
-        <test-method signature="CheckoutCalculation()[pri:3, instance:CheckOutPageCalculation@21baa903]" started-at="2026-01-06T19:00:35 IST" name="CheckoutCalculation" finished-at="2026-01-06T19:00:36 IST" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckoutCalculation -->
-        <test-method signature="PriceVerification()[pri:4, instance:CheckOutPageCalculation@21baa903]" started-at="2026-01-06T19:00:36 IST" name="PriceVerification" finished-at="2026-01-06T19:00:36 IST" duration-ms="52" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PriceVerification -->
-        <test-method signature="TaxVerificatione()[pri:5, instance:CheckOutPageCalculation@21baa903]" started-at="2026-01-06T19:00:36 IST" name="TaxVerificatione" finished-at="2026-01-06T19:00:36 IST" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TaxVerificatione -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:CheckOutPageCalculation@21baa903]" started-at="2026-01-06T19:00:36 IST" name="teardown" finished-at="2026-01-06T19:00:36 IST" duration-ms="228" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- CheckOutPageCalculation -->
-    </test> <!-- CheckOutPage Tests -->
-    <test started-at="2026-01-06T19:00:36 IST" name="CheckTitleHomePage Tests" finished-at="2026-01-06T19:00:49 IST" duration-ms="12720">
-      <class name="CheckTitleHomePage">
-        <test-method signature="VerifyHomePageTitle()[pri:0, instance:CheckTitleHomePage@16746061]" started-at="2026-01-06T19:00:36 IST" name="VerifyHomePageTitle" finished-at="2026-01-06T19:00:48 IST" duration-ms="12420" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHomePageTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:CheckTitleHomePage@16746061]" started-at="2026-01-06T19:00:48 IST" name="teardown" finished-at="2026-01-06T19:00:49 IST" duration-ms="298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- CheckTitleHomePage -->
-    </test> <!-- CheckTitleHomePage Tests -->
-    <test started-at="2026-01-06T19:00:49 IST" name="AddToCart Tests" finished-at="2026-01-06T19:01:06 IST" duration-ms="17450">
-      <class name="AddToCart">
-        <test-method signature="AddtoCartCheck()[pri:0, instance:AddToCart@5c8eee0f]" started-at="2026-01-06T19:00:49 IST" name="AddtoCartCheck" finished-at="2026-01-06T19:01:06 IST" duration-ms="17324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddtoCartCheck -->
-        <test-method signature="YourCart()[pri:0, instance:AddToCart@5c8eee0f]" started-at="2026-01-06T19:01:06 IST" name="YourCart" finished-at="2026-01-06T19:01:06 IST" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- YourCart -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:AddToCart@5c8eee0f]" started-at="2026-01-06T19:01:06 IST" name="teardown" finished-at="2026-01-06T19:01:06 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- AddToCart -->
-    </test> <!-- AddToCart Tests -->
-    <test started-at="2026-01-06T19:01:06 IST" name="CheckOutPageCalculation Tests" finished-at="2026-01-06T19:01:55 IST" duration-ms="49188">
-      <class name="CheckOutPageCalculation">
-        <test-method signature="AddtoCartCheck()[pri:1, instance:CheckOutPageCalculation@58c34bb3]" started-at="2026-01-06T19:01:06 IST" name="AddtoCartCheck" finished-at="2026-01-06T19:01:54 IST" duration-ms="48284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddtoCartCheck -->
-        <test-method signature="YourCart()[pri:2, instance:CheckOutPageCalculation@58c34bb3]" started-at="2026-01-06T19:01:54 IST" name="YourCart" finished-at="2026-01-06T19:01:54 IST" duration-ms="112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- YourCart -->
-        <test-method signature="CheckoutCalculation()[pri:3, instance:CheckOutPageCalculation@58c34bb3]" started-at="2026-01-06T19:01:54 IST" name="CheckoutCalculation" finished-at="2026-01-06T19:01:55 IST" duration-ms="338" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckoutCalculation -->
-        <test-method signature="PriceVerification()[pri:4, instance:CheckOutPageCalculation@58c34bb3]" started-at="2026-01-06T19:01:55 IST" name="PriceVerification" finished-at="2026-01-06T19:01:55 IST" duration-ms="71" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PriceVerification -->
-        <test-method signature="TaxVerificatione()[pri:5, instance:CheckOutPageCalculation@58c34bb3]" started-at="2026-01-06T19:01:55 IST" name="TaxVerificatione" finished-at="2026-01-06T19:01:55 IST" duration-ms="39" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TaxVerificatione -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:CheckOutPageCalculation@58c34bb3]" started-at="2026-01-06T19:01:55 IST" name="teardown" finished-at="2026-01-06T19:01:55 IST" duration-ms="337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- CheckOutPageCalculation -->
-    </test> <!-- CheckOutPageCalculation Tests -->
   </suite> <!-- AutomationE2E Suite -->
 </testng-results>
