@@ -47,7 +47,8 @@ public class Login extends Base {
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		log.info("Login Successful");
-		log.info("=========Test Case: Login Page Navigation Completed=========");
+		log.info("=========Test Case: Login Page Navigation Completed=========");  
+		System.out.println("web hook test");
 	}
 
 	@AfterTest
