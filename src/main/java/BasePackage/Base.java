@@ -19,7 +19,7 @@ public class Base {
 		//to disable save password pop up
 		ChromeOptions options = new ChromeOptions();	
 		Map<String, Object> prefs = new HashMap<>();
-		prefs.put("profile.password_manager_leak_detection", false);
+		prefs.put("profile.password_manager_leak_detection", false); 
 		prefs.put("profile.credentials_enable_service", false);
 		options.setExperimentalOption("prefs", prefs); 
 		//to disable save password pop up
