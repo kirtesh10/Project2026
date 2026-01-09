@@ -21,7 +21,7 @@ public class AddToCart extends Base {
 		driver = initializerDriver();
 		log.info("Driver is initialized");
 		driver.get(prop.getProperty("url"));
-		log.info("Navigated to Home page");
+		log.info("Navigated to Home page"); 
 		LoginPage lp = new LoginPage(driver);
 		AddtoCartPage atc = new AddtoCartPage(driver);
 		Thread.sleep(2000);
