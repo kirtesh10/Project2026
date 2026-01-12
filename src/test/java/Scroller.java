@@ -10,7 +10,7 @@ import PageObject.LoginPage;
 public class Scroller extends Base {
 	@Test
 	public void Scroller() throws IOException, InterruptedException, AWTException {
-				System.out.println("i am come from local branch");
+		System.out.println("i am come from local branch");
 		driver = initializerDriver();
 		driver.get(prop.getProperty("url"));
 		LoginPage lp = new LoginPage(driver);
