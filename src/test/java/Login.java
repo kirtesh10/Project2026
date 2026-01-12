@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import BasePackage.Base;
+import BasePackage.MonteScreenRecorderUtil;
 import PageObject.LoginPage;
 
 public class Login extends Base {
@@ -28,7 +29,14 @@ public class Login extends Base {
 	public void setupLogger() {
 		log.info("Logger initialized successfully.");
 	}
-
+	
+	// Placeholder for screen recording start logic
+	/*@BeforeTest
+	public void ScreenrecordingStart() throws Exception {
+		log.info("Screen recording started.");
+		MonteScreenRecorderUtil.startRecording("basePageNavigation");
+	}*/
+	
 	@Test
 	public void basePageNavigation() throws IOException, InterruptedException, AWTException {
 		log.info("=========Test Case: Login Page Navigation Started=========");
@@ -52,8 +60,9 @@ public class Login extends Base {
 	}
 
 	@AfterTest
-	public void teardown() {
+	public void teardown() throws Exception {
 		log.info("Closing the browser");
+	//	MonteScreenRecorderUtil.stopRecording();
 		driver.close();
 
 	}
