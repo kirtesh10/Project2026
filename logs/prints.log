@@ -1,0 +1,5 @@
+14:15:00.683 [main] INFO  Login - Logger initialized successfully.
+14:15:00.705 [main] INFO  Login - =========Test Case: Login Page Navigation Started=========
+14:15:13.222 [main] INFO  Login - Login Successful
+14:15:13.222 [main] INFO  Login - =========Test Case: Login Page Navigation Completed=========
+14:15:13.224 [main] INFO  Login - Closing the browser
