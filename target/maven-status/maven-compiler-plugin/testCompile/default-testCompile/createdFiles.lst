@@ -2,6 +2,7 @@ Login.class
 CheckOutPageCalculation.class
 PageObject\CheckOutPage.class
 PageObject\LoginPage.class
+DevoneCode.class
 CheckTitleHomePage.class
 PageObject\programmtest.class
 AddToCart.class
