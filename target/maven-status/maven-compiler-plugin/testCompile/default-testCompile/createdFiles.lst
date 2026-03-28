@@ -7,4 +7,3 @@ PageObject\programmtest.class
 AddToCart.class
 PageObject\HomePageTitle.class
 HomePage.class
-PageObject\AddtoCartPage.class
