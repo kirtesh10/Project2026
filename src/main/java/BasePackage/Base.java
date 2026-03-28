@@ -24,7 +24,9 @@ public class Base {
 		options.setExperimentalOption("prefs", prefs); 
 		//to disable save password pop up
 
-		prop=new Properties();  
+		prop=new Properties(); 
+		
+		//testtttttttttttttt
 		FileInputStream fis=new FileInputStream("C:\\Users\\ujjwa\\Project2026\\src\\main\\java\\Resources\\Data.properties");
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
