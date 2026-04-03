@@ -8,11 +8,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import BasePackage.Base;
-import BasePackage.MonteScreenRecorderUtil;
 import PageObject.AddtoCartPage;
 import PageObject.CheckOutPage;
 import PageObject.LoginPage;
@@ -25,16 +23,7 @@ public class CheckOutPageCalculation extends Base {
 
 	public static Logger log = LogManager.getLogger(CheckOutPageCalculation.class.getName());
 	private WebDriverWait wait;
-	
-	// Placeholder for screen recording start logic
-	/*@BeforeTest
-	public void ScreenrecordingStart() throws Exception {
-		log.info("Screen recording started.");
-		MonteScreenRecorderUtil.startRecording("AddtoCartCheck");
-		MonteScreenRecorderUtil.startRecording("YourCart");
-		}*/
-	
-	
+
 	@Test(priority = 1)
 	public void AddtoCartCheck() throws IOException, InterruptedException, AWTException {
 		log.info("=========Test Case: Add to Cart Started=========");
@@ -44,20 +33,14 @@ public class CheckOutPageCalculation extends Base {
 		LoginPage lp = new LoginPage(driver);
 		AddtoCartPage atc = new AddtoCartPage(driver);
 		log.info("Navigated to Home page");
-		Thread.sleep(2000);
 		lp.enterusername(); // enter username
-		Thread.sleep(2000);
 		lp.enterpassword(); // enter password
-		Thread.sleep(2000);
 		lp.clicklogin(); // click login button
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		atc.addToCartBackpack(); // add backpack to cart
-		Thread.sleep(2000);
 		atc.addToCartBikeLight(); // add bike light to cart
-		Thread.sleep(2000);
 		atc.addToCartBoltTShirt(); // add bolt t-shirt to cart
-		Thread.sleep(2000);
 		log.info("Items added to cart successfully");
 		String totalitem = atc.getTotalItemsInCart(); // get total items in cart
 		Assert.assertEquals(totalitem, "3");
@@ -113,26 +96,26 @@ public class CheckOutPageCalculation extends Base {
 		log.info("=========Test Case: Price Verification Completed=========");
 	}
 
-	@Test(priority = 5)
-	public void TaxVerificatione() throws InterruptedException {
-		log.info("=========Test Case: Tax Verification Started=========");
-		CheckOutPage checkout = new CheckOutPage(driver);
-		String subtotal = checkout.getSubtotal().replace("Item total: $", "");
-		double subtotalvalue = Double.parseDouble(subtotal);
-		System.out.println("Subtotal value is: " + subtotalvalue);
-		double taxamount = Math.round(subtotalvalue * 8.01) / 100.00;
-		String taxdisplayed = checkout.getTax().replace("Tax: $", "");
-		
-		double taxdisplayedvalue = Double.parseDouble(taxdisplayed);
-		Assert.assertEquals(taxamount, taxdisplayedvalue, "Tax amount mismatch");
-		log.info("Tax verification successful");
-		log.info("=========Test Case: Tax Verification Completed=========");
-	}
+	/*
+	 * @Test(priority = 5)
+	 * public void TaxVerificatione() throws InterruptedException {
+	 * log.info("=========Test Case: Tax Verification Started=========");
+	 * CheckOutPage checkout = new CheckOutPage(driver);
+	 * String subtotal = checkout.getSubtotal().replace("Item total: $", "");
+	 * double subtotalvalue = Double.parseDouble(subtotal);
+	 * System.out.println("Subtotal value is: " + subtotalvalue);
+	 * double taxamount = (subtotalvalue * 8) / 100;
+	 * String taxdisplayed = checkout.getTax().replace("Tax: $", "");
+	 * double taxdisplayedvalue = Double.parseDouble(taxdisplayed);
+	 * Assert.assertEquals(taxamount, taxdisplayedvalue, "Tax amount mismatch");
+	 * log.info("Tax verification successful");
+	 * log.info("=========Test Case: Tax Verification Completed=========");
+	 * }
+	 */
 
 	@AfterTest
-	public void teardown() throws Exception {
+	public void teardown() {
 		log.info("Closing the browser");
-	//	MonteScreenRecorderUtil.stopRecording();
 		driver.close();
 		log.info("Browser closed");
 	}

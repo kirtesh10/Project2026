@@ -1,1 +1,9 @@
-/target/
+target/
+test-output/
+.vscode/
+.settings/
+.classpath
+.project
+chromedriver-win64/chromedriver.exe
+*.log
+*.tmp

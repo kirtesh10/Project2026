@@ -19,23 +19,23 @@ public class Base {
 		//to disable save password pop up
 		ChromeOptions options = new ChromeOptions();	
 		Map<String, Object> prefs = new HashMap<>();
-		prefs.put("profile.password_manager_leak_detection", false); 
+		prefs.put("profile.password_manager_leak_detection", false);
 		prefs.put("profile.credentials_enable_service", false);
 		options.setExperimentalOption("prefs", prefs); 
 		//to disable save password pop up
 
-		prop=new Properties();  
-		//FileInputStream fis=new FileInputStream("/src/main/java/Resources/Data.properties");
-		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Resources\\Data.properties");
+		prop=new Properties(); 
+		
+		//testtttttttttttttt
+		FileInputStream fis=new FileInputStream("C:\\Users\\ujjwa\\Project2026\\src\\main\\java\\Resources\\Data.properties");
 		prop.load(fis);
-		String browserName=prop.getProperty("browser"); 
+		String browserName=prop.getProperty("browser");
 		String urlName=prop.getProperty("url");
 		
 		if(browserName.equals("chrome")) {
 			//code to launch chrome
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver-win64//chromedriver.exe");
-		
-			driver = new ChromeDriver(options); 
+			System.setProperty("webdriver.chrome.driver", "C://Users//ujjwa//Project2026//chromedriver-win64//chromedriver.exe");
+			 driver = new ChromeDriver(options);
 			 
 		}
 		else if(browserName.equals("firefox")) {
@@ -45,7 +45,7 @@ public class Base {
 			//code to launch IE
 		}
 	  	
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
 
