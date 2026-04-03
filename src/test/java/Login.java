@@ -54,7 +54,7 @@ public class Login extends Base {
 	public void teardown() {
 		log.info("Closing the browser");
 		driver.close();
-		 
+
 	}
 
 }

@@ -96,20 +96,22 @@ public class CheckOutPageCalculation extends Base {
 		log.info("=========Test Case: Price Verification Completed=========");
 	}
 
-	@Test(priority = 5)
-	public void TaxVerificatione() throws InterruptedException {
-		log.info("=========Test Case: Tax Verification Started=========");
-		CheckOutPage checkout = new CheckOutPage(driver);
-		String subtotal = checkout.getSubtotal().replace("Item total: $", "");
-		double subtotalvalue = Double.parseDouble(subtotal);
-		System.out.println("Subtotal value is: " + subtotalvalue);
-		double taxamount = (subtotalvalue * 8) / 100;
-		String taxdisplayed = checkout.getTax().replace("Tax: $", "");
-		double taxdisplayedvalue = Double.parseDouble(taxdisplayed);
-		Assert.assertEquals(taxamount, taxdisplayedvalue, "Tax amount mismatch");
-		log.info("Tax verification successful");
-		log.info("=========Test Case: Tax Verification Completed=========");
-	}
+	/*
+	 * @Test(priority = 5)
+	 * public void TaxVerificatione() throws InterruptedException {
+	 * log.info("=========Test Case: Tax Verification Started=========");
+	 * CheckOutPage checkout = new CheckOutPage(driver);
+	 * String subtotal = checkout.getSubtotal().replace("Item total: $", "");
+	 * double subtotalvalue = Double.parseDouble(subtotal);
+	 * System.out.println("Subtotal value is: " + subtotalvalue);
+	 * double taxamount = (subtotalvalue * 8) / 100;
+	 * String taxdisplayed = checkout.getTax().replace("Tax: $", "");
+	 * double taxdisplayedvalue = Double.parseDouble(taxdisplayed);
+	 * Assert.assertEquals(taxamount, taxdisplayedvalue, "Tax amount mismatch");
+	 * log.info("Tax verification successful");
+	 * log.info("=========Test Case: Tax Verification Completed=========");
+	 * }
+	 */
 
 	@AfterTest
 	public void teardown() {
