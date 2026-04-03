@@ -17,7 +17,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import BasePackage.Base;
-import BasePackage.MonteScreenRecorderUtil;
 import PageObject.LoginPage;
 
 public class Login extends Base {
@@ -29,18 +28,11 @@ public class Login extends Base {
 	public void setupLogger() {
 		log.info("Logger initialized successfully.");
 	}
-	
-	// Placeholder for screen recording start logic
-	/*@BeforeTest
-	public void ScreenrecordingStart() throws Exception {
-		log.info("Screen recording started.");
-		MonteScreenRecorderUtil.startRecording("basePageNavigation");
-	}*/
-	
+
 	@Test
 	public void basePageNavigation() throws IOException, InterruptedException, AWTException {
 		log.info("=========Test Case: Login Page Navigation Started=========");
-		System.out.println("i am come from local branch");
+
 		driver = initializerDriver();
 		driver.get(prop.getProperty("url"));
 		LoginPage lp = new LoginPage(driver);
@@ -55,14 +47,13 @@ public class Login extends Base {
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 		log.info("Login Successful");
-		log.info("=========Test Case: Login Page Navigation Completed=========");  
-		System.out.println("web hook test");
+		log.info("=========Test Case: Login Page Navigation Completed=========");
 	}
 
+	// To close the browser after test execution
 	@AfterTest
-	public void teardown() throws Exception {
+	public void teardown() {
 		log.info("Closing the browser");
-	//	MonteScreenRecorderUtil.stopRecording();
 		driver.close();
 
 	}

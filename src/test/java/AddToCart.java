@@ -16,12 +16,13 @@ public class AddToCart extends Base {
 	public WebDriver driver;
 
 	@Test
+	// git check
 	public void AddtoCartCheck() throws IOException, InterruptedException, AWTException {
 
 		driver = initializerDriver();
 		log.info("Driver is initialized");
 		driver.get(prop.getProperty("url"));
-		log.info("Navigated to Home page"); 
+		log.info("Navigated to Home page");
 		LoginPage lp = new LoginPage(driver);
 		AddtoCartPage atc = new AddtoCartPage(driver);
 		Thread.sleep(2000);
@@ -63,7 +64,7 @@ public class AddToCart extends Base {
 	@AfterTest
 	public void teardown() {
 		log.info("Closing the browser");
-	//	driver.close();
+		driver.close();
 		log.info("Browser closed");
 	}
 
