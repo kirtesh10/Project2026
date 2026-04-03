@@ -16,6 +16,7 @@ public class AddToCart extends Base {
 	public WebDriver driver;
 
 	@Test
+	// git check
 	public void AddtoCartCheck() throws IOException, InterruptedException, AWTException {
 
 		driver = initializerDriver();
