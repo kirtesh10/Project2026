@@ -50,6 +50,7 @@ public class Login extends Base {
 		log.info("=========Test Case: Login Page Navigation Completed=========");
 	}
 
+	// To close the browser after test execution
 	@AfterTest
 	public void teardown() {
 		log.info("Closing the browser");
