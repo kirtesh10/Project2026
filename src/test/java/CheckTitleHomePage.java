@@ -47,11 +47,4 @@ public class CheckTitleHomePage extends Base {
 
 	}
 
-	@AfterTest
-	public void teardown() {
-		log.info("Closing the browser");
-		driver.close();
-		log.info("Browser closed");
-	}
-
 }
