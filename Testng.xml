@@ -29,8 +29,6 @@
 	</test>
 	<test name="CheckOutPageCalculation Tests">
 		<classes>
-
-		
 			<class name="CheckOutPageCalculation" />
 		</classes>
 	</test>
